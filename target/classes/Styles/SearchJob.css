@@ -1,0 +1,26 @@
+.job_view_container{
+    -fx-background-color: #EEEEEE;
+}
+
+
+.job_view_container_VBox{
+    -fx-background-color: #EEEEEE;
+}
+
+.job_view_container_Splitpane{
+    -fx-background-color: grey;
+}
+
+.job_view_container_textfield{
+    -fx-background-color: #EEEEEE;
+}
+
+.job_view_container_button{
+    -fx-background-color: #1F614A;
+}
+
+.job_view_container_Text{
+    -fx-text-fill: white;
+    -fx-font-size: 1.3em;
+    -fx-font-family: "Calibri Light";
+}

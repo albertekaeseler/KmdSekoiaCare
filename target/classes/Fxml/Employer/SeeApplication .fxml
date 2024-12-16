@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.jmc.kmdsekoiacarepath.Controllers.Employer.SeeApplicationController"
+            prefHeight="750.0" prefWidth="850.0">
+    <VBox spacing="10.0" layoutX="20.0" layoutY="20.0" AnchorPane.topAnchor="20.0" AnchorPane.leftAnchor="20.0"
+          AnchorPane.rightAnchor="20.0" AnchorPane.bottomAnchor="20.0">
+        <Label text="Dine Modtagne Ansøgninger" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+
+        <TableView fx:id="applicationsTable" prefHeight="600.0" prefWidth="800.0">
+            <columns>
+                <TableColumn fx:id="jobTitleColumn" text="Job Titel" prefWidth="200.0">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="jobTitle" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="applicantNameColumn" text="Ansøger Navn" prefWidth="150.0">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="applicantName" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="applicantEmailColumn" text="Ansøger Email" prefWidth="200.0">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="applicantEmail" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="statusColumn" text="Status" prefWidth="100.0">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="status" />
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+
+        <HBox spacing="10.0">
+            <Button fx:id="refreshButton" text="Opdater Liste" />
+            <Button fx:id="logoutButton" text="Log Ud" />
+        </HBox>
+
+        <Label fx:id="errorLabel" textFill="red" />
+    </VBox>
+</AnchorPane>

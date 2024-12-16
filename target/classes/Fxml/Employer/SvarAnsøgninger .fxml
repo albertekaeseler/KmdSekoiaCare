@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jmc.kmdsekoiacarepath.Controllers.Employer.SvarAnsøgningerController">
+    <VBox layoutX="36.0" layoutY="39.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="45.0">
+        <SplitPane dividerPositions="0.5013215859030837" prefHeight="659.0" prefWidth="759.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                    <TextArea fx:id="ansøgning_textarea" prefHeight="657.0" prefWidth="376.0" />
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="657.0" prefWidth="386.0">
+                    <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Godkend Ansøgning: " AnchorPane.leftAnchor="10.0" />
+                    <Button fx:id="godkend_btn" layoutX="14.0" layoutY="31.0" mnemonicParsing="false" text="Godkend " AnchorPane.leftAnchor="10.0" />
+                    <Text layoutX="14.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Afvis Ansøgning:" AnchorPane.leftAnchor="10.0" />
+                    <Button fx:id="afvis_btn" layoutX="14.0" layoutY="117.0" mnemonicParsing="false" text="Afvis " AnchorPane.leftAnchor="10.0" />
+                    <Text layoutX="14.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Revurdér Ansøgning: " AnchorPane.leftAnchor="10.0" />
+                    <Button fx:id="revurder_btn" layoutX="10.0" layoutY="204.0" mnemonicParsing="false" text="Revurdér" AnchorPane.leftAnchor="10.0" />
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </VBox>
+    <Label fx:id="ansøgning_lbl" layoutX="45.0" layoutY="28.0" text="Ansøgning :">
+        <font>
+          <Font name="System Bold" size="14.0" />
+        </font>
+    </Label>
+</AnchorPane>

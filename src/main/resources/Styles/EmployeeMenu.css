@@ -1,0 +1,94 @@
+
+/* Dette stykke er for den Yderste vbox inde i sceneBuilder */
+.main_menu_container{
+    -fx-background-color: #eeeeee;
+    -fx-alignment: center;
+    -fx-padding: 0 10 0 10;
+}
+
+/* Dette er for vores AnchorPane*/
+.left_container{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(two-pass-box, #AAAAAA, 5, 0, 0, 4);
+   /* Dropshadow betyder at den tilføjer noget skygge til det man sætter den til at
+   tilføje dropshadow til. Syntaxen for dropshadow er:
+   <blur-type>, <color>, <radius>, <spread>, <offsetX>, <offsetV> */
+    /*Two-pass.box bruges til at sløre skyggen for en lidt jævnere effekt.*/
+}
+
+/*Title/ logo section*/
+
+
+/* Denne er til det 2 vbox, som der vores titel eller "menu". den er øverst på siden*/
+.title_container{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 20 20 0 0 ; /* radius følger urets retning, de 2*20 er højre og venstre hjørne*/
+    -fx-alignment: top_center;
+    -fx-padding: 10;
+}
+
+.title_container Text{
+    -fx-fill: #1F614A;
+    -fx-font-size: 3em;
+}
+
+/*Navigation section*/
+.menu_container {
+    -fx-padding: 10 10 10 20; /* padding bruges til at skabe rum omkring et elements indhold, inden for enhver defineret grænse.  */
+    -fx-spacing: 20;
+}
+
+.menu_container Button{
+    -fx-pref-width: 130; /*Sets the preferred width of the button to 115 pixels.*/
+    -fx-pref-height: 40; /*Sets the preferred height of the button to 40 pixels*/
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill:#1F614A ;
+    -fx-font-size: 1.1em;
+    -fx-alignment: center_left;
+    -fx-effect: dropshadow(three-pass-box, #DDDDDD, 5,0,0,6);
+
+}
+   /*Hover betyder, at der sker en visuel aktivtet uden at man behøver at trykke på den ting man holder musen over*/
+.menu_container Button:hover{
+    -fx-cursor: default;
+}
+
+.alt_menu_btn{
+    -fx-pref-width: 130; /*Sets the preferred width of the button to 115 pixels.*/
+    -fx-pref-height: 40; /*Sets the preferred height of the button to 40 pixels*/
+    -fx-background-color: #1F614A;
+    -fx-text-fill:#FFFFFF ;
+    -fx-font-size: 1.1em;
+    -fx-alignment: center_left;
+    -fx-effect: dropshadow(three-pass-box, #FFFFFF,0,0,0,0);
+}
+
+/*Rapporter problemer eller kom med forslag*/
+.report_container {
+    -fx-background-color: #EEFFEE;
+    -fx-background-radius: 10;
+    -fx-alignment: center;
+    -fx-spacing: 10;
+    -fx-padding: 10, 0, 10, 0;
+}
+.report_container Text{
+    -fx-font-weight:bold;
+    -fx-fill: #1F614A;
+}
+
+.report_container Label{
+    -fx-text-alignment:center ;/*egenskaben -fx-text-alignment bruges til at styre den
+     vandrette justering af tekst i en JavaFX-tekst, -etiket eller andre tekstholdige containers*/
+    -fx-wrap-text: true; /*egenskaben -fx-wrap-text bruges til at kontrollere, om tekst i en Label, TextArea eller lignende tekstholdige JavaFX-komponenter skal ombrydes,
+    når den når grænsen af indholdet*/
+}
+.report_container Button{
+    -fx-pref-width: 100;
+    -fx-background-color: #1F614A;
+    -fx-text-fill: #FFFFFF;
+}
+
+.report_container Button:hover{
+    -fx-cursor: default;
+}

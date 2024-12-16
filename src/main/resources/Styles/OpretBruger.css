@@ -1,0 +1,11 @@
+.opret_bruger_container{
+    -fx-background-color: #EEEEEE;
+}
+
+.opret_bruger_container_vbox{
+    -fx-border-width: 0 0 0 1;
+    -fx-border-color: #000000;
+    -fx-padding: 10;
+    -fx-spacing: 10;
+}
+

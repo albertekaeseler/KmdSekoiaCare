@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="830.0" stylesheets="@../../Styles/MineAnsøgninger.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jmc.kmdsekoiacarepath.Controllers.Employee.MineAnsøgningerController">
+   <styleClass>
+      <String fx:value="dashboard" />
+      <String fx:value="user_name" />
+   </styleClass>
+   <Text fx:id="user_name" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="user_name" text="Hej, Katrine" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="30.0" />
+   <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="section_title" text="Ansøgningsstatus: " AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="90.0" />
+   <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="section_title" text="Mine ansøgninger: " AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="90.0" />
+   <ListView fx:id="mineansøgninger_listview" layoutX="19.0" layoutY="139.33333333333334" prefHeight="489.0" prefWidth="550.0" styleClass="list-cell" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="139.0" />
+   <VBox layoutX="569.0" layoutY="120.0" prefHeight="593.0" prefWidth="251.0" styleClass="section_title" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="120.0">
+      <Label styleClass="section_title2" text="Sendt:" />
+      <ListView fx:id="sendt_listview" prefHeight="150.0" prefWidth="251.0" styleClass="list-cell" />
+      <Label styleClass="section_title4" text="Accepteret: " />
+      <ListView fx:id="accepteret_listview" prefHeight="150.0" prefWidth="251.0" styleClass="list-cell" />
+      <Label styleClass="section_title3" text="Afvist:" />
+      <ListView fx:id="afvist_listview" prefHeight="150.0" prefWidth="200.0" styleClass="list-cell" />
+   </VBox>
+</AnchorPane>
